@@ -1,38 +1,122 @@
 #wrap #wrap-inner {
-    background-color: rgb(0, 0, 0);
+    background-color: var(--bg-2);
 }
 
+body {
+    background-color: var(--bg-1);
+}
+
+* {
+    transition: opacity, color, border-color .3s ease;
+}
+
+.ad  {
+    display: none;
+}
+
+
+:root {
+    --font-color-normal: #757575;
+    --font-color-hover: #999999;
+    --font-color-select: #c5c5c5;
+    --bg-1: #333;
+    --bg-2: #1a1a1a;
+    --bg-active: #1a1a1a;
+    --bg-hover-1: #404040;
+    --bg-hover-2: rgba(117, 117, 117, 0.3);
+    --line-1: #535353;
+}
+
+/************** Header ************/
+#header-inner {
+    background-color: var(--bg-2);
+}
 /************** subnav ************/
 
 #wrap .shot-subnav {
-    background-color: #333;
+    background-color: var(--bg-1);
+}
+
+#wrap .shot-views .open .btn-dropdown-link {
+    background-color: var(--bg-2);
+    box-shadow: none;
 }
 
 #wrap .shot-subnav .scroll a {
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 50%);
+    background-image: linear-gradient(to right, #333 0%, #333 50%);
 }
 
 #wrap .outlined {
-    color: #757575;
-    box-shadow: 0px 0px 0px 1px rgb(83, 83, 83) inset;
+    color: var(--font-color-normal);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
 
 #wrap .shot-filters {
-    border-top: 1px solid #535353;
+    border-top: 1px solid var(--line-1);
 }
 
 #wrap input {
-    background-color: #333;
-    color: #757575;
-    box-shadow: 0px 0px 0px 1px rgb(83, 83, 83) inset;
+    background-color: var(--bg-1);
+    color: var(--font-color-normal);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
 
 #wrap .shot-categories .active a {
-    color: hsla(0, 0%, 60%, 1);
-    background-color: #404040;
+    color: var(--font-color-hover);
+    background-color: var(--bg-active);
 }
 
 #wrap .shot-categories a:hover {
-    color: hsla(0, 0%, 60%, 1);
-    background-color: #404040;
+    color: var(--font-color-hover);
+    background-color: var(--bg-hover-2);
+}
+
+#wrap .filters-active {
+    background-color: var(--bg-active);
+    box-shadow: none;
+}
+
+#wrap .btn-dropdown-options {
+    border-color: var(--bg-1);
+    overflow: hidden;
+    background-color: var(--bg-1);
+    box-shadow: 0px 0px 0px 1px rgb(83, 83, 83) inset;
+}
+
+#wrap .btn-dropdown-options a:hover {
+    background-color: var(--bg-hover-2);
+    color: var(--font-color-hover);
+}
+
+#wrap .btn-dropdown-options .active a {
+    background-color: var(--bg-active);
+    color: var(--font-color-select);
+}
+
+#wrap .btn-dropdown-options .rule {
+    border-color: var(--line-1);
+}
+
+#wrap .color-chips {
+    background-color: var(--bg-1);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+}
+
+/*************** Footer *********************/
+
+#footer {
+    background-color: var(--bg-1) !important;
+    border-top-color: var(--line-1) !important;
+}
+
+#footer p.follow a img {
+    filter: invert(1);
+}
+
+#footer a:hover {
+    color: var(--font-color-select) !important;
+}
+
+#footer #shots-total {
+    filter: invert(0.8) grayscale(1);
 }
