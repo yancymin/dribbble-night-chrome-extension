@@ -1,15 +1,21 @@
 {
-    "manifest_version": 1,
-  
+    "manifest_version": 2,
     "name": "Dribbble",
     "description": "Dribbble dark",
     "version": "0.1",
-  
-    "content_scripts": [{
-      "matches": ["http://*/*", "https://*/*"],
-      "css": ["style.css"],
-      "js": ["style.js"],
-      "run_at": "document_start"
-    }]
-  }
-  
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*.dribbble.com/*",
+                "https://*.dribbble.com/*"
+            ],
+            "css": [
+                "style.css"
+            ],
+            // "js": [
+            //     "style.js"
+            // ],
+            "run_at": "document_start"
+        }
+    ]
+}

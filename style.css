@@ -1,0 +1,38 @@
+#wrap #wrap-inner {
+    background-color: rgb(0, 0, 0);
+}
+
+/************** subnav ************/
+
+#wrap .shot-subnav {
+    background-color: #333;
+}
+
+#wrap .shot-subnav .scroll a {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, black 50%);
+}
+
+#wrap .outlined {
+    color: #757575;
+    box-shadow: 0px 0px 0px 1px rgb(83, 83, 83) inset;
+}
+
+#wrap .shot-filters {
+    border-top: 1px solid #535353;
+}
+
+#wrap input {
+    background-color: #333;
+    color: #757575;
+    box-shadow: 0px 0px 0px 1px rgb(83, 83, 83) inset;
+}
+
+#wrap .shot-categories .active a {
+    color: hsla(0, 0%, 60%, 1);
+    background-color: #404040;
+}
+
+#wrap .shot-categories a:hover {
+    color: hsla(0, 0%, 60%, 1);
+    background-color: #404040;
+}
