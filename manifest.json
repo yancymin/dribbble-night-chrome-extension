@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "Dribbble",
-    "description": "Dribbble dark",
-    "version": "0.1",
+    "name": "Dribbble Night",
+    "description": "Dark Mode for Dribbble.",
+    "version": "0.11",
     "content_scripts": [
         {
             "matches": [
@@ -12,9 +12,6 @@
             "css": [
                 "style.css"
             ],
-            // "js": [
-            //     "style.js"
-            // ],
             "run_at": "document_start"
         }
     ]
