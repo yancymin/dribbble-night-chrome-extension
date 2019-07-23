@@ -152,3 +152,7 @@ body {
 #content .form-btn svg path {
     fill: var(--font-color-hover);
 }
+
+#content .group {
+    margin: 0 0px 16px 12px;
+}
