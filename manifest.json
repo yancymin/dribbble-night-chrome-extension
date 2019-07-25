@@ -10,7 +10,8 @@
                 "https://*.dribbble.com/*"
             ],
             "css": [
-                "style.css"
+                "style.css",
+                "userProfile.css"
             ],
             "run_at": "document_start"
         }

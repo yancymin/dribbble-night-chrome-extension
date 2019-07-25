@@ -1,0 +1,37 @@
+#wrap .full-tabs {
+    background-color: var(--bg-1) !important;
+    border-bottom: 1px solid var(--line-1) !important;
+}
+
+#wrap .full-tabs select {
+    color: var(--font-color-normal) !important;
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset !important;
+    border: none !important;
+}
+
+#wrap .full-tabs .label {
+    color: var(--font-color-normal) !important;
+}
+
+#wrap .full-tabs .count {
+    color: var(--font-color-select) !important;
+}
+
+#wrap .full-tabs ul.full-tabs-links ul {
+    color: var(--font-color-normal) !important;
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset !important;
+    background-color: var(--bg-1);
+}
+
+#wrap .full-tabs ul.full-tabs-links ul a:hover {
+    background-color: var(--bg-hover-2) !important;
+    color: var(--font-color-hover) !important;
+}
+
+#wrap .full-tabs ul.full-tabs-links ul a:hover span {
+    color: var(--font-color-hover) !important;
+}
+
+#wrap .profile-info {
+    background-color: var(--bg-1);
+}

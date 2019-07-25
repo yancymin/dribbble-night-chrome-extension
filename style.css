@@ -1,3 +1,4 @@
+
 body {
     background-color: var(--bg-1);
 }
@@ -6,30 +7,55 @@ body {
     transition: opacity, color, border-color .3s ease;
 }
 
-.ad  {
+.ad {
     display: none;
 }
 
 :root {
-    --font-color-normal: rgb(117, 117, 117);
-    --font-color-hover: rgb(153, 153, 153);
-    --font-color-select: rgb(197, 197, 197);
-    --bg-1: rgb(51, 51, 51);
-    --bg-2: rgb(26, 26, 26);
-    --bg-active: rgb(26, 26, 26);
-    --bg-hover-1: rgb(64, 64, 64);
-    --bg-hover-2: rgba(117, 117, 117, 0.3);
-    --line-1: rgb(83, 83, 83);
+    --font-color-normal: hsl(0, 0%, 60%);
+    --font-color-hover: hsl(0, 0%, 70%);
+    --font-color-select: hsl(0, 0%, 90%);
+    --bg-1: hsl(0, 0%, 20%);
+    --bg-2: hsl(0, 0%, 10%);
+    --bg-active: hsl(0, 0%, 10%);
+    --bg-hover-1: hsl(0, 0%, 25%);
+    --bg-hover-2: hsla(0, 0%, 46%, 0.3);
+    --line-1: hsl(0, 0%, 33%);
 }
 
 /************** Header ************/
 #header-inner {
     background-color: var(--bg-2);
 }
+
+#t-upld a span {
+    color: var(--font-color-normal);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+    border: none !important;
+}
+
+#header-inner .search-text {
+    background-color: var(--bg-1) !important;
+}
+
+#new-header input.search-text:focus {
+    background-color: var(--bg-2) !important;
+    color: var(--font-color-select) !important;
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+}
+
+#new-nav li:hover ul.tabs,
+#new-nav li:hover div.menu-community,
+#new-nav li ul.tabs li.menu-pro .menu-pro-features {
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+    border-radius: 6px !important;
+}
+
 /************** subnav ************/
 
 #wrap .shot-subnav {
     background-color: var(--bg-1);
+    border-bottom: 1px solid var(--line-1);
 }
 
 #wrap .shot-views .open .btn-dropdown-link {
@@ -38,10 +64,11 @@ body {
 }
 
 #wrap .shot-subnav .scroll a {
+    color: var(--font-color-normal);
     background-image: linear-gradient(to right, #333 0%, #333 50%);
 }
 
-#wrap .outlined {
+#wrap .outlined{
     color: var(--font-color-normal);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
@@ -52,13 +79,21 @@ body {
 
 #wrap input {
     background-color: var(--bg-1);
-    color: var(--font-color-normal);
+    color: var(--font-color-select);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
 
+#wrap .outlined .label {
+    color: var(--font-color-normal);
+}
+
 #wrap .shot-categories .active a {
-    color: var(--font-color-hover);
+    color: var(--font-color-select) !important;
     background-color: var(--bg-active);
+}
+
+#wrap .shot-subnav .shot-categories a {
+    color: var(--font-color-normal);
 }
 
 #wrap .shot-categories a:hover {
@@ -69,6 +104,15 @@ body {
 #wrap .filters-active {
     background-color: var(--bg-active);
     box-shadow: none;
+    color: var(--font-color-select) !important;
+}
+
+#wrap .filters-active .label {
+    color: var(--font-color-select) !important;
+}
+
+#wrap .filters-active svg path {
+    fill: var(--font-color-select);
 }
 
 #wrap .btn-dropdown-options {
@@ -76,6 +120,10 @@ body {
     overflow: hidden;
     background-color: var(--bg-1);
     box-shadow: 0px 0px 0px 1px rgb(83, 83, 83) inset;
+}
+
+#wrap .btn-dropdown-options a {
+    color: var(--font-color-normal);
 }
 
 #wrap .btn-dropdown-options a:hover {
@@ -90,6 +138,10 @@ body {
 
 #wrap .btn-dropdown-options .rule {
     border-color: var(--line-1);
+}
+
+#wrap .shot-subnav .shot-views .open a {
+    color: var(--font-color-select);
 }
 
 #wrap .color-chips {
@@ -121,26 +173,30 @@ body {
     background-color: var(--bg-2);
 }
 
-#content .dribbble{
+#content .dribbble {
     background-color: var(--bg-1);
     border-radius: 4px;
 }
-#content .shot-display-options{
+
+#content .shot-display-options {
     background-color: var(--bg-1);
 }
-#content .dribbble-shot{
-  padding: 0;
-}
+
+/* #content .dribbble-shot {
+    padding: 0;
+} */
 
 #content .dribbble-shot-actions {
     background-color: var(--bg-1);
     color: var(--font-color-normal);
 }
+
 #content .dribbble-shot-title-date {
     background-color: var(--bg-1);
     color: var(--font-color-normal);
 }
-#content .dribbble-shot-title-date p{
+
+#content .dribbble-shot-title-date p {
     color: var(--font-color-select);
 }
 
@@ -153,6 +209,6 @@ body {
     fill: var(--font-color-hover);
 }
 
-#content .group {
+/* #content .group {
     margin: 0 0px 16px 12px;
-}
+} */
