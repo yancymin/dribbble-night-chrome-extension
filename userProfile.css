@@ -32,6 +32,67 @@
     color: var(--font-color-hover) !important;
 }
 
+/************** Side-bar ******************/
+
 #wrap .profile-info {
     background-color: var(--bg-1);
+}
+
+#wrap .profile-info .actions-menu .actions-list {
+    color: var(--font-color-normal) !important;
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset !important;
+    background-color: var(--bg-1);
+}
+
+#wrap .profile-info .vcard a {
+    color: var(--font-color-select) !important;
+}
+
+#wrap .profile-info .vcard span,
+.bio {
+    color: var(--font-color-normal) !important;
+}
+
+#wrap .profile-info .message-btn {
+    background-color: var(--bg-2) !important;
+}
+
+#wrap .profile-info .badge {
+    background-color: var(--bg-2) !important;
+    color: var(--font-color-select) !important;
+}
+
+#wrap .profile-info div {
+    border-color: var(--line-1) !important;
+}
+
+#wrap .profile-info-mod img {
+    filter: invert(1);
+}
+
+#wrap .photo {
+    filter: unset !important;
+}
+
+#wrap .profile-info .url,
+.label,
+.skills-list a,
+h4,
+.all a {
+    color: var(--font-color-normal) !important;
+}
+
+#wrap .profile-info .skills-list a {
+    border-color: var(--line-1) !important;
+}
+
+#wrap .profile-info .settings:hover  span{
+    background-position: 0 0 !important;  
+}
+
+#wrap .profile-info div.actions-menu a.settings span {
+    filter: invert(1) !important;
+}
+#wrap .profile-info div.actions-menu a.settings  {
+    box-shadow: none !important;
 }
