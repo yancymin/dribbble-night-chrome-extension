@@ -96,3 +96,106 @@ h4,
 #wrap .profile-info div.actions-menu a.settings  {
     box-shadow: none !important;
 }
+
+/************** shot-overlay ************/
+#user-profile .overlay-content {
+    background-color: var(--bg-1);
+}
+
+#user-profile .overlay-content .outlined {
+    color: var(--font-color-normal);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+    background-color: var(--bg-1);
+}
+
+#user-profile .overlay-content .shot-title {
+    color: var(--font-color-select);
+}
+
+#user-profile .shot-overlay {
+    background: rgba(30, 30, 30, 0.96) !important;
+}
+
+#user-profile .overlay-content * {
+    border-color: var(--line-1);
+}
+
+#user-profile .shot-loading {
+    background-color: var(--bg-2) !important;
+}
+
+#user-profile .main-shot {
+    background-color: var(--bg-1) !important;
+}
+
+#user-profile .shot-loading.shot {
+    background-color: white !important;
+}
+
+#user-profile .shot-loading.description,
+.shot-loading.description:before,
+.shot-loading.description:after {
+    background-color: white !important;
+}
+
+#user-profile .shot-loading-container {
+    filter: invert(1) grayscale(1);
+}
+
+#user-profile .shot-overlay .title {
+    filter: invert(1) grayscale(1) brightness(0.9) contrast(1);
+    opacity: 0.1;
+}
+
+#user-profile .overlay-content .icon {
+    filter: grayscale(1) invert(1);
+}
+
+#user-profile .overlay-content p {
+    color: var(--font-color-normal);
+}
+
+#user-profile .detail-attachments {
+    border-bottom: 1px solid var(--line-1);
+}
+
+#user-profile .detail-attachments h3 {
+    filter: invert(1);
+}
+
+#user-profile .detail-attachments h3 svg {
+    filter: invert(0) !important;
+}
+
+#user-profile #comments a {
+    color: var(--font-color-normal);
+}
+
+#user-profile .shot-loading-columns {
+    filter: contrast(0.66);
+}
+
+#user-profile .detail-shot {
+    background-image: none;
+}
+
+#user-profile .overlay-content .section {
+    color: var(--font-color-normal);
+}
+
+#comment_text {
+    border: 1px solid var(--line-1);
+}
+
+#user-profile .tipsy div:last-child {
+    background-color: var(--bg-2);
+}
+
+#user-profile .overlay-content .hire-us-button div,
+.related-player-shots h3 a {
+    color: var(--font-color-normal) !important;
+}
+
+#user-profile .overlay-content .message-btn svg {
+    filter: invert(0) !important;
+}
