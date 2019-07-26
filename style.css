@@ -222,3 +222,53 @@ span.badge {
 /* #content .group {
     margin: 0 0px 16px 12px;
 } */
+
+/************** shot-overlay ************/
+#home .overlay-content {
+    background-color: var(--bg-1);
+}
+
+#home .overlay-content .outlined {
+    color: var(--font-color-normal);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+    background-color: var(--bg-1);
+}
+
+#home .overlay-content .shot-title {
+    color: var(--font-color-select);
+}
+
+#home .shot-overlay {
+    background: rgba(30, 30, 30, 0.96) !important;
+}
+
+#home .overlay-content * {
+    border-color: var(--line-1);
+}
+
+#home .shot-loading {
+    background-color: var(--bg-2) !important;
+}
+
+#home .main-shot {
+    background-color: var(--bg-2) !important;
+}
+
+#home .shot-loading.shot {
+    background-color: white !important;
+}
+
+#home .shot-loading.description,
+.shot-loading.description:before,
+.shot-loading.description:after {
+    background-color: white !important;
+}
+
+#home .shot-loading-container {
+    filter: invert(1) grayscale(1);
+}
+
+#home .shot-overlay .title {
+    filter: invert(1) grayscale(1) brightness(0.9) contrast(1);
+    opacity: 0.1;
+}
