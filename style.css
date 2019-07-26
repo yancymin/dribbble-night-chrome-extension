@@ -159,6 +159,32 @@ span.badge {
     color: var(--font-color-hover) !important;
 }
 
+#home .hover-card {
+    background-color: var(--bg-1);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+}
+
+#home .hover-card::after {
+    border-color: transparent transparent var(--bg-1) var(--bg-1);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+}
+
+#home .hover-card span {
+    color: var(--font-color-normal);
+}
+
+#home .hover-card div {
+    border-color: var(--line-1);
+}
+
+#home .hover-card .name {
+    color: var(--font-color-select) !important;
+}
+
+#home .hover-card .unfollow span {
+    color: var(--font-color-select) !important;
+}
+
 /*************** Footer *********************/
 
 #footer {
@@ -284,14 +310,44 @@ span.badge {
 #home .detail-attachments {
     border-bottom: 1px solid var(--line-1);
 }
-#home .detail-attachments h3{
-   filter: invert(1);
+
+#home .detail-attachments h3 {
+    filter: invert(1);
 }
 
-#home #comments a{
+#home .detail-attachments h3 svg {
+    filter: invert(0) !important;
+}
+
+#home #comments a {
     color: var(--font-color-normal);
 }
 
 #home .shot-loading-columns {
     filter: contrast(0.66);
+}
+
+#home .detail-shot {
+    background-image: none;
+}
+
+#home .overlay-content .section {
+    color: var(--font-color-normal);
+}
+
+#comment_text {
+    border: 1px solid var(--line-1);
+}
+
+#home .tipsy div:last-child {
+    background-color: var(--bg-2);
+}
+
+#home .overlay-content .hire-us-button div,
+.related-player-shots h3 a {
+    color: var(--font-color-normal) !important;
+}
+
+#home .overlay-content .message-btn svg {
+    filter: invert(0) !important;
 }
