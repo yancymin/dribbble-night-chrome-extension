@@ -251,7 +251,7 @@ span.badge {
 }
 
 #home .main-shot {
-    background-color: var(--bg-2) !important;
+    background-color: var(--bg-1) !important;
 }
 
 #home .shot-loading.shot {
@@ -271,4 +271,27 @@ span.badge {
 #home .shot-overlay .title {
     filter: invert(1) grayscale(1) brightness(0.9) contrast(1);
     opacity: 0.1;
+}
+
+#home .overlay-content .icon {
+    filter: grayscale(1) invert(1);
+}
+
+#home .overlay-content p {
+    color: var(--font-color-normal);
+}
+
+#home .detail-attachments {
+    border-bottom: 1px solid var(--line-1);
+}
+#home .detail-attachments h3{
+   filter: invert(1);
+}
+
+#home #comments a{
+    color: var(--font-color-normal);
+}
+
+#home .shot-loading-columns {
+    filter: contrast(0.66);
 }
