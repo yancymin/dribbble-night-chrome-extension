@@ -20,6 +20,7 @@ body {
     --bg-hover-1: hsl(0, 0%, 25%);
     --bg-hover-2: hsla(0, 0%, 46%, 0.3);
     --line-1: hsl(0, 0%, 33%);
+    --icon-color: hsla(0,0%,100%,0.4);
 }
 
 /************** Header ************/
@@ -159,29 +160,36 @@ span.badge {
     color: var(--font-color-hover) !important;
 }
 
-#home .hover-card {
+#home .hover-card, #details .hover-card,#profile .hover-card {
     background-color: var(--bg-1);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
 
-#home .hover-card::after {
-    border-color: transparent transparent var(--bg-1) var(--bg-1);
+#home .hover-card .follow,#details .hover-card .follow,#profile .hover-card .follow {
+    background-color: var(--bg-1);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
 
-#home .hover-card span {
+#home .hover-card::after ,#details .hover-card::after ,#profile .hover-card::after {
+    /* border-color: transparent transparent var(--bg-1) var(--bg-1);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset; */
+    display: none;
+    opacity: 0;
+}
+
+#home .hover-card span,#details .hover-card span,#profile .hover-card span {
     color: var(--font-color-normal);
 }
 
-#home .hover-card div {
+#home .hover-card div ,#details .hover-card div,#profile .hover-card div {
     border-color: var(--line-1);
 }
 
-#home .hover-card .name {
+#home .hover-card .name,#details .hover-card .name ,#profile .hover-card .name {
     color: var(--font-color-select) !important;
 }
 
-#home .hover-card .unfollow span {
+#home .hover-card .unfollow span ,#details .hover-card .unfollow span,#profile .hover-card .unfollow span {
     color: var(--font-color-select) !important;
 }
 
