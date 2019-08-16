@@ -23,13 +23,48 @@ tabs.appendChild(switchNode)
 
 let switchBtn = switchNode.getElementsByTagName('a')
 let open = switchNode.getElementsByClassName('availability-toggle')[0]
+let dot = switchNode.getElementsByClassName('availability-toggle-target')[0]
 
-if (open.classList == 'availability-toggle') {
-  switchNode.addEventListener('click', function() {
-    open.classList.add('publicly')
-  })
-} else {
-  switchNode.addEventListener('click', function() {
-    open.classList.remove('publicly')
-  })
+function css() {
+  var cssId = 'myCss' // you could encode the css path itself to generate id..
+  if (!document.getElementById(cssId)) {
+    var head = document.getElementsByTagName('head')[0]
+    var link = document.createElement('link')
+    link.id = cssId
+    link.rel = 'stylesheet'
+    link.type = 'text/css'
+    link.href = chrome.extension.getURL('style.css')
+    link.media = 'all'
+    head.appendChild(link)
+  }
+  var cssId = 'myCss2' // you could encode the css path itself to generate id..
+  if (!document.getElementById(cssId)) {
+    var head = document.getElementsByTagName('head')[0]
+    var link = document.createElement('link')
+    link.id = cssId
+    link.rel = 'stylesheet'
+    link.type = 'text/css'
+    link.href = chrome.extension.getURL('userProfile.css')
+    link.media = 'all'
+    head.appendChild(link)
+  }
 }
+
+function removeCss() {
+  var parent = document.getElementsByTagName('head')[0]
+  var self = document.getElementById('myCss')
+  var removed = parent.removeChild(self)
+  removed === self
+}
+
+switchNode.addEventListener('click', function() {
+  if (open.className == 'availability-toggle') {
+    open.classList.add('publicly')
+    css()
+    console.log(open.className)
+  } else {
+    console.log('remove')
+    removeCss()
+    open.classList.remove('publicly')
+  }
+})

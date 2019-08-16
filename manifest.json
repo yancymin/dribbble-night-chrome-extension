@@ -3,17 +3,13 @@
   "name": "Dribbble Night",
   "description": "Dark Mode for Dribbble.",
   "version": "0.15",
-  "permissions":
-    [
-        "tabs", 
-        "storage", 
-        "http://*/*",
-        "https://*/*" 
-    ],
+  "permissions": [
+    "tabs", "https://*.dribbble.com/*"
+  ],
   "content_scripts": [
     {
       "matches": ["http://*.dribbble.com/*", "https://*.dribbble.com/*"],
-      "css": ["style.css", "userProfile.css"],
+    //   "css": ["style.css", "userProfile.css"],
       "js": ["content.js"],
       "run_at": "document_end"
     }
@@ -21,5 +17,10 @@
   "browser_action": {
     "default_title": "ark Mode for Dribbble."
   },
+  "web_accessible_resources": [
+    "style.css",
+    "userProfile.css",
+    "content.js"
+  ],
   "homepage_url": "https://www.dribbbbble.com"
 }
