@@ -77,6 +77,22 @@ select {
     background-color: var(--bg-1) !important;
 }
 
+input:not([type=checkbox]):not([type=radio]),
+.selectize-input {
+    background-color: var(--bg-1) !important;
+    color: var(--font-color-select) !important;
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset !important;
+    border: none !important
+}
+
+* {
+    border-color: var(--line-1) !important;
+}
+
+p {
+    color: var(--font-color-normal) !important;
+}
+
 /************** Header ************/
 #header-inner {
     background-color: var(--bg-2);
@@ -216,6 +232,8 @@ span.badge {
 
 #home .hover-card,
 #details .hover-card,
+#user-profile .hover-card,
+#shots .hover-card,
 #profile .hover-card {
     background-color: var(--bg-1);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
@@ -223,6 +241,8 @@ span.badge {
 
 #home .hover-card .follow,
 #details .hover-card .follow,
+#user-profile .hover-card .follow,
+#shots .hover-card .follow,
 #profile .hover-card .follow {
     background-color: var(--bg-1);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
@@ -230,6 +250,8 @@ span.badge {
 
 #home .hover-card::after,
 #details .hover-card::after,
+#user-profile .hover-card::after,
+#shots .hover-card::after,
 #profile .hover-card::after {
     /* border-color: transparent transparent var(--bg-1) var(--bg-1);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset; */
@@ -239,24 +261,32 @@ span.badge {
 
 #home .hover-card span,
 #details .hover-card span,
+#user-profile .hover-card span,
+#shots .hover-card span,
 #profile .hover-card span {
     color: var(--font-color-normal);
 }
 
 #home .hover-card div,
 #details .hover-card div,
+#user-profile .hover-card div,
+#shots .hover-card div,
 #profile .hover-card div {
     border-color: var(--line-1);
 }
 
 #home .hover-card .name,
 #details .hover-card .name,
+#user-profile .hover-card .name,
+#shots .hover-card .name,
 #profile .hover-card .name {
     color: var(--font-color-select) !important;
 }
 
 #home .hover-card .unfollow span,
 #details .hover-card .unfollow span,
+#user-profile .hover-card .unfollow span,
+#shots .hover-card .unfollow span,
 #profile .hover-card .unfollow span {
     color: var(--font-color-select) !important;
 }
@@ -330,7 +360,8 @@ span.badge {
 } */
 
 /************** shot-overlay ************/
-#home .overlay-content {
+#home .overlay-content,
+#shots .overlay-content {
     background-color: var(--bg-1);
 }
 
@@ -338,88 +369,110 @@ span.badge {
     color: white !important;
 }
 
-#home .overlay-content .outlined {
+#home .overlay-content .outlined,
+#shots .overlay-content .outlined {
     color: var(--font-color-normal);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
     background-color: var(--bg-1);
 }
 
-#home .overlay-content .shot-title {
+#home .overlay-content .shot-title,
+#shots .overlay-content .shot-title {
     color: var(--font-color-select);
 }
 
-#home .shot-overlay {
+#home .shot-overlay,
+#shots .shot-overlay {
     background: rgba(30, 30, 30, 0.96) !important;
 }
 
-#home .overlay-content * {
+#home .overlay-content *,
+#shots .overlay-content * {
     border-color: var(--line-1);
 }
 
-#home .shot-loading {
+#home .shot-loading,
+#shots .shot-loading {
     background-color: var(--bg-2) !important;
 }
 
-#home .main-shot {
+#home .main-shot,
+#shots .main-shot {
     background-color: var(--bg-1) !important;
 }
 
-#home .shot-loading.shot {
+#home .shot-loading.shot,
+#shots .shot-loading.shot {
     background-color: white !important;
 }
 
 #home .shot-loading.description,
 .shot-loading.description:before,
+.shot-loading.description:after,
+#shots .shot-loading.description,
+.shot-loading.description:before,
 .shot-loading.description:after {
     background-color: white !important;
 }
 
-#home .shot-loading-container {
+#home .shot-loading-container,
+#shots .shot-loading-container {
     filter: invert(1) grayscale(1);
 }
 
-#home .shot-overlay .title {
+#home .shot-overlay .title,
+#shots .shot-overlay .title {
     filter: invert(1) grayscale(1) brightness(0.9) contrast(1);
     opacity: 0.1;
 }
 
-#home .overlay-content .icon {
+#home .overlay-content .icon,
+#shots .overlay-content .icon {
     filter: grayscale(1);
 }
 
-#home .overlay-content .icon path {
+#home .overlay-content .icon path,
+#shots .overlay-content .icon path {
     fill: var(--icon-color);
 }
 
-#home .overlay-content p {
+#home .overlay-content p,
+#shots .overlay-content p {
     color: var(--font-color-normal);
 }
 
-#home .detail-attachments {
+#home .detail-attachments,
+#shots .detail-attachments {
     border-bottom: 1px solid var(--line-1);
 }
 
-#home .detail-attachments h3 {
+#home .detail-attachments h3,
+#shots .detail-attachments h3 {
     filter: invert(1);
 }
 
-#home .detail-attachments h3 svg {
+#home .detail-attachments h3 svg,
+#shots .detail-attachments h3 svg {
     filter: invert(0) !important;
 }
 
-#home #comments a {
+#home #comments a,
+#shots #comments a {
     color: var(--font-color-normal);
 }
 
-#home .shot-loading-columns {
+#home .shot-loading-columns,
+#shots .shot-loading-columns {
     filter: contrast(0.66);
 }
 
-#home .detail-shot {
+#home .detail-shot,
+#shots .detail-shot {
     background-image: none;
 }
 
-#home .overlay-content .section {
+#home .overlay-content .section,
+#shots .overlay-content .section {
     color: var(--font-color-normal);
 }
 
@@ -427,16 +480,20 @@ span.badge {
     border: 1px solid var(--line-1);
 }
 
-#home .tipsy div:last-child {
+#home .tipsy div:last-child,
+#shots .tipsy div:last-child {
     background-color: var(--bg-2);
 }
 
 #home .overlay-content .hire-us-button div,
+.related-player-shots h3 a,
+#shots .overlay-content .hire-us-button div,
 .related-player-shots h3 a {
     color: var(--font-color-normal) !important;
 }
 
-#home .overlay-content .message-btn svg {
+#home .overlay-content .message-btn svg,
+#shots .overlay-content .message-btn svg {
     filter: invert(0) !important;
 }
 
@@ -455,4 +512,94 @@ span.badge {
 
 #incoming-activity .next_page {
     filter: invert(1);
+}
+
+/******************** account **********************/
+#account .shot-overlay,
+#password .shot-overlay,
+#account-billing .shot-overlay,
+#notifications .shot-overlay,
+#invitations .shot-overlay,
+#export .shot-overlay,
+#sessions .shot-overlay,
+#social-sites .shot-overlay,
+#messages .shot-overlay,
+#work_opportunities .shot-overlay {
+    display: none;
+}
+
+#wrap .account-menu {
+    background-color: var(--bg-1);
+    color: var(--font-color-select);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+    border: none;
+}
+
+#wrap .account-menu li {
+    border-color: var(--line-1);
+}
+
+#wrap .account-menu .active a {
+    color: var(--font-color-select);
+}
+
+#wrap .account-menu li a:hover {
+    color: var(--font-color-select);
+}
+
+#wrap .account-menu .active a::after {
+    filter: invert(1);
+}
+
+#account input:not([type=checkbox]):not([type=radio]),
+#password input:not([type=checkbox]):not([type=radio]),
+#work_opportunities input:not([type=checkbox]):not([type=radio]) {
+    background-color: var(--bg-1);
+    color: var(--font-color-select);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+    border: none;
+}
+
+#wrap label {
+    color: var(--font-color-normal);
+    border-color: var(--line-1);
+}
+
+#work_opportunities .work-settings-fields * {
+    border-color: var(--line-1) !important;
+}
+
+#work_opportunities .selected {
+    color: var(--font-color-select);
+}
+
+#account .info-links {
+    background-color: var(--bg-1);
+}
+
+#account .info-links h3,
+#account h2,
+#notifications h2,
+#account-billing h2,
+#account-billing em {
+    color: var(--font-color-normal);
+}
+
+#account .info-links img {
+    filter: invert(1);
+}
+
+#account-billing .echo-plan {
+    background-color: var(--bg-1);
+    border-color: var(--line-1);
+}
+
+/******************** designers **********************/
+#designers .designer-search-header {
+    background-color: var(--bg-1);
+}
+
+/******************** designers **********************/
+#teams  .designer-search-header {
+    background-color: var(--bg-1);
 }
