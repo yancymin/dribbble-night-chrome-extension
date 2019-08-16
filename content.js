@@ -1,5 +1,3 @@
-/**  judement dark mode  **/
-
 function css() {
   var cssId = 'myCss'
   if (!document.getElementById(cssId)) {
