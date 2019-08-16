@@ -20,7 +20,61 @@ body {
     --bg-hover-1: hsl(0, 0%, 25%);
     --bg-hover-2: hsla(0, 0%, 46%, 0.3);
     --line-1: hsl(0, 0%, 33%);
-    --icon-color: hsla(0,0%,100%,0.4);
+    --line-2: hsl(0, 0%, 25%);
+    --icon-color: hsla(0, 0%, 100%, 0.4);
+}
+
+/************** global************/
+#bucket-add {
+    background-color: var(--bg-1);
+    color: var(--font-color-select);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+}
+
+#bucket-add * {
+    border-color: var(--line-1);
+    color: var(--font-color-normal);
+}
+
+#bucket-add .form-btn {
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+}
+
+#bucket-add input {
+    background-color: var(--bg-2);
+    color: var(--font-color-select);
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset;
+}
+
+#bucket-add .group a {
+    background-color: var(--bg-2);
+}
+
+#bucket-add .group a:hover {
+    background-color: var(--bg-1);
+}
+
+#bucket-add button {
+    color: white;
+}
+
+#bucket-add .description {
+    box-shadow: 0px 0px 0px 1px var(--line-1) inset !important;
+}
+
+#bucket-add #owner_id {
+    background-color: var(--bg-1);
+}
+
+textarea,
+select {
+    background-color: var(--bg-1) !important;
+    color: var(--font-color-select) !important;
+    border-color: var(--line-1) !important;
+}
+
+.shot-media-section {
+    background-color: var(--bg-1) !important;
 }
 
 /************** Header ************/
@@ -77,7 +131,7 @@ body {
     border-top: 1px solid var(--line-1);
 }
 
-#wrap input {
+#wrap .shot-filters-form input {
     background-color: var(--bg-1);
     color: var(--font-color-select);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
@@ -160,36 +214,50 @@ span.badge {
     color: var(--font-color-hover) !important;
 }
 
-#home .hover-card, #details .hover-card,#profile .hover-card {
+#home .hover-card,
+#details .hover-card,
+#profile .hover-card {
     background-color: var(--bg-1);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
 
-#home .hover-card .follow,#details .hover-card .follow,#profile .hover-card .follow {
+#home .hover-card .follow,
+#details .hover-card .follow,
+#profile .hover-card .follow {
     background-color: var(--bg-1);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
 
-#home .hover-card::after ,#details .hover-card::after ,#profile .hover-card::after {
+#home .hover-card::after,
+#details .hover-card::after,
+#profile .hover-card::after {
     /* border-color: transparent transparent var(--bg-1) var(--bg-1);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset; */
     display: none;
     opacity: 0;
 }
 
-#home .hover-card span,#details .hover-card span,#profile .hover-card span {
+#home .hover-card span,
+#details .hover-card span,
+#profile .hover-card span {
     color: var(--font-color-normal);
 }
 
-#home .hover-card div ,#details .hover-card div,#profile .hover-card div {
+#home .hover-card div,
+#details .hover-card div,
+#profile .hover-card div {
     border-color: var(--line-1);
 }
 
-#home .hover-card .name,#details .hover-card .name ,#profile .hover-card .name {
+#home .hover-card .name,
+#details .hover-card .name,
+#profile .hover-card .name {
     color: var(--font-color-select) !important;
 }
 
-#home .hover-card .unfollow span ,#details .hover-card .unfollow span,#profile .hover-card .unfollow span {
+#home .hover-card .unfollow span,
+#details .hover-card .unfollow span,
+#profile .hover-card .unfollow span {
     color: var(--font-color-select) !important;
 }
 
@@ -213,6 +281,10 @@ span.badge {
 }
 
 /************** content ************/
+.menu-section-title {
+    color: var(--font-color-normal) !important;
+}
+
 #wrap #wrap-inner {
     background-color: var(--bg-2);
 }
@@ -262,6 +334,10 @@ span.badge {
     background-color: var(--bg-1);
 }
 
+#comments h2 a {
+    color: white !important;
+}
+
 #home .overlay-content .outlined {
     color: var(--font-color-normal);
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
@@ -308,7 +384,11 @@ span.badge {
 }
 
 #home .overlay-content .icon {
-    filter: grayscale(1) invert(1);
+    filter: grayscale(1);
+}
+
+#home .overlay-content .icon path {
+    fill: var(--icon-color);
 }
 
 #home .overlay-content p {
@@ -358,4 +438,21 @@ span.badge {
 
 #home .overlay-content .message-btn svg {
     filter: invert(0) !important;
+}
+
+/******************* activity *********************/
+#incoming-activity .full-tabs .active a {
+    color: var(--font-color-select);
+}
+
+#incoming-activity .activity li {
+    border-color: var(--line-1);
+}
+
+#incoming-activity .activity span {
+    color: var(--font-color-normal);
+}
+
+#incoming-activity .next_page {
+    filter: invert(1);
 }

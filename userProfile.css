@@ -347,6 +347,12 @@ h4,
 #details .non-overlay {
     background-color: var(--bg-2);
 }
+#details .non-overlay .screenshot-meta .profile-message .message-btn {
+    background-color: #7bbb5e;
+}
+#details .non-overlay .screenshot-meta .profile-message .message-btn  svg path{
+    fill: white;
+}
 
 #post-comment-btn {
     background: #ea4c89 !important;
@@ -366,7 +372,7 @@ h4,
 }
 
 #details .non-overlay * {
-    border-color: var(--line-1);
+    border-color: var(--line-2);
 }
 
 #details .shot-loading {
@@ -488,6 +494,6 @@ h4,
     color: var(--font-color-select) !important;
 } */
 
-#details .hoverable {
+#details .hoverable, #wrap .overlay-content .hoverable  {
     color: var(--font-color-select) !important;
 }

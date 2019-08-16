@@ -7,7 +7,6 @@
   "content_scripts": [
     {
       "matches": ["http://*.dribbble.com/*", "https://*.dribbble.com/*"],
-      //   "css": ["style.css", "userProfile.css"],
       "js": ["content.js"],
       "run_at": "document_start"
     }
