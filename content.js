@@ -29,9 +29,12 @@ function css() {
 
 function removeCss() {
   var parent = document.getElementsByTagName('head')[0]
-  var self = document.getElementById('myCss')
-  var removed = parent.removeChild(self)
-  removed === self
+  var myCss = document.getElementById('myCss')
+  var removed = parent.removeChild(myCss)
+  removed === myCss
+  var myCss2 = document.getElementById('myCss2')
+  var removed2 = parent.removeChild(myCss2)
+  removed2 === myCss2
 }
 
 chrome.storage.local.get(['dribbbleDarkMode'], function(status) {
