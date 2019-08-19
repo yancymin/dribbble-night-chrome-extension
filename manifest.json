@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Dribbble Night",
   "description": "Dark Mode for Dribbble.",
-  "version": "0.15",
+  "version": "1.0",
   "permissions": ["tabs", "https://*.dribbble.com/*", "storage"],
   "content_scripts": [
     {
@@ -12,7 +12,7 @@
     }
   ],
   "browser_action": {
-    "default_title": "ark Mode for Dribbble."
+    "default_title": "Dark Mode for Dribbble."
   },
   "web_accessible_resources": ["style.css", "userProfile.css", "content.js"],
   "homepage_url": "https://www.dribbbbble.com"
