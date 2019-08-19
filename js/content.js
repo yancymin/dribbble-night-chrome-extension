@@ -6,7 +6,7 @@ function css() {
     link.id = cssId
     link.rel = 'stylesheet'
     link.type = 'text/css'
-    link.href = chrome.extension.getURL('style.css')
+    link.href = chrome.extension.getURL('style/style.css')
     link.media = 'all'
     head.appendChild(link)
   }
@@ -17,7 +17,7 @@ function css() {
     link.id = cssId
     link.rel = 'stylesheet'
     link.type = 'text/css'
-    link.href = chrome.extension.getURL('userProfile.css')
+    link.href = chrome.extension.getURL('style/userProfile.css')
     link.media = 'all'
     head.appendChild(link)
   }

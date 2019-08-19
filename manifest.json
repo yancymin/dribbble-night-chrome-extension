@@ -3,17 +3,35 @@
   "name": "Dribbble Night",
   "description": "Dark Mode for Dribbble.",
   "version": "1.0",
-  "permissions": ["tabs", "https://*.dribbble.com/*", "storage"],
+  "permissions": [
+    "tabs",
+    "https://*.dribbble.com/*",
+    "storage"
+  ],
+  "icons": {
+    "16": "img/icon-16.png",
+    "48": "img/icon-48.png",
+    "128": "img/icon-128.png"
+  },
   "content_scripts": [
     {
-      "matches": ["http://*.dribbble.com/*", "https://*.dribbble.com/*"],
-      "js": ["content.js"],
+      "matches": [
+        "http://*.dribbble.com/*",
+        "https://*.dribbble.com/*"
+      ],
+      "js": [
+        "js/content.js"
+      ],
       "run_at": "document_start"
     }
   ],
   "browser_action": {
     "default_title": "Dark Mode for Dribbble."
   },
-  "web_accessible_resources": ["style.css", "userProfile.css", "content.js"],
+  "web_accessible_resources": [
+    "style/style.css",
+    "style/userProfile.css",
+    "style/content.js"
+  ],
   "homepage_url": "https://www.dribbbbble.com"
 }
