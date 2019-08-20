@@ -10,7 +10,7 @@ function css() {
     link.media = 'all'
     head.appendChild(link)
   }
-  var cssId = 'myCss2' 
+  var cssId = 'myCss2'
   if (!document.getElementById(cssId)) {
     var head = document.getElementsByTagName('head')[0]
     var link = document.createElement('link')
@@ -88,5 +88,6 @@ document.onreadystatechange = function() {
         open.classList.remove('publicly')
       }
     })
+    chrome.storage.local.set({ dribbbleDarkMode: true })
   }
 }
