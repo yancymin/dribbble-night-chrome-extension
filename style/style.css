@@ -108,15 +108,15 @@ p {
     background-color: var(--bg-1) !important;
 }
 
-#new-header input.search-text:focus {
+#nav input.search-text:focus {
     background-color: var(--bg-2) !important;
     color: var(--font-color-select) !important;
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
 }
 
-#new-nav li:hover ul.tabs,
-#new-nav li:hover div.menu-community,
-#new-nav li ul.tabs li.menu-pro .menu-pro-features {
+#nav li:hover ul.tabs,
+#nav li:hover div.menu-community,
+#nav li ul.tabs li.menu-pro .menu-pro-features {
     box-shadow: 0px 0px 0px 1px var(--line-1) inset;
     border-radius: 6px !important;
 }

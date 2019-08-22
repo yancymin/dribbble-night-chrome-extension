@@ -1,25 +1,23 @@
 function css() {
   var cssId = 'myCss'
   if (!document.getElementById(cssId)) {
-    var head = document.getElementsByTagName('head')[0]
     var link = document.createElement('link')
     link.id = cssId
     link.rel = 'stylesheet'
     link.type = 'text/css'
     link.href = chrome.extension.getURL('style/style.css')
     link.media = 'all'
-    head.appendChild(link)
+    document.getElementsByTagName('head')[0].appendChild(link)
   }
-  var cssId = 'myCss2'
-  if (!document.getElementById(cssId)) {
-    var head = document.getElementsByTagName('head')[0]
-    var link = document.createElement('link')
-    link.id = cssId
-    link.rel = 'stylesheet'
-    link.type = 'text/css'
-    link.href = chrome.extension.getURL('style/userProfile.css')
-    link.media = 'all'
-    head.appendChild(link)
+  var cssId2 = 'myCss2'
+  if (!document.getElementById(cssId2)) {
+    var link2 = document.createElement('link')
+    link2.id = cssId2
+    link2.rel = 'stylesheet'
+    link2.type = 'text/css'
+    link2.href = chrome.extension.getURL('style/userProfile.css')
+    link2.media = 'all'
+    document.getElementsByTagName('head')[0].appendChild(link2)
   }
 }
 
@@ -44,9 +42,8 @@ chrome.storage.local.get(['dribbbleDarkMode'], function(status) {
 document.onreadystatechange = function() {
   if (document.readyState === 'interactive') {
     let switchNode = document.createElement('li')
-    let tabs = document
-      .getElementById('new-header')
-      .getElementsByClassName('tabs')[2]
+    let tabs = document.getElementById('nav').getElementsByClassName('tabs')[2]
+    switchNode.id = 'switchMode'
 
     switchNode.innerHTML = `
         <span class="menu-non-link">
@@ -62,12 +59,9 @@ document.onreadystatechange = function() {
                         </span>
                     </span>
         `
-
-    switchNode.id = 'switchMode'
     tabs.appendChild(switchNode)
-
-    let open = switchNode.getElementsByClassName('availability-toggle')[0]
     let dot = switchNode.getElementsByClassName('availability-toggle-target')[0]
+    let open = switchNode.getElementsByClassName('availability-toggle')[0]
 
     chrome.storage.local.get(['dribbbleDarkMode'], function(status) {
       if (status.dribbbleDarkMode) {
@@ -88,6 +82,5 @@ document.onreadystatechange = function() {
         open.classList.remove('publicly')
       }
     })
-    chrome.storage.local.set({ dribbbleDarkMode: true })
   }
 }
