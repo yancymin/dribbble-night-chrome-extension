@@ -42,7 +42,7 @@ chrome.storage.local.get(['dribbbleDarkMode'], function(status) {
 document.onreadystatechange = function() {
   if (document.readyState === 'interactive') {
     let switchNode = document.createElement('li')
-    let tabs = document.getElementById('nav').getElementsByClassName('tabs')[2]
+    let tabs = document.getElementById('t-profile').getElementsByClassName('tabs')[0]
     switchNode.id = 'switchMode'
 
     switchNode.innerHTML = `
