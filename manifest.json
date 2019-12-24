@@ -1,10 +1,11 @@
 {
   "manifest_version": 2,
-  "name": "FigmaCN",
-  "description": "Figma 中文插件",
-  "version": "0.1",
+  "name": "Dribbble Night",
+  "description": "Dark Mode for Dribbble.",
+  "version": "1.5",
   "permissions": [
-    "https://*.figma.com/*",
+    "tabs",
+    "https://*.dribbble.com/*",
     "storage"
   ],
   "icons": {
