@@ -1,10 +1,10 @@
 {
   "manifest_version": 2,
-  "name": "Dribbble Night",
-  "description": "Dark Mode for Dribbble.",
-  "version": "1.55",
+  "name": "FigmaCN",
+  "description": "Figma 中文插件",
+  "version": "0.1",
   "permissions": [
-    "https://*.dribbble.com/*",
+    "https://*.figma.com/*",
     "storage"
   ],
   "icons": {
@@ -15,13 +15,14 @@
   "content_scripts": [
     {
       "matches": [
-        "http://*.dribbble.com/*",
-        "https://*.dribbble.com/*"
+        "http://*.figma.com/*",
+        "https://*.figma.com/*"
       ],
       "js": [
         "js/content.js"
       ],
-      "run_at": "document_start"
+      "run_at": "document_end",
+      "all_frames": true
     }
   ],
   "browser_action": {
@@ -29,7 +30,6 @@
   },
   "web_accessible_resources": [
     "style/style.css",
-    "style/userProfile.css",
     "style/content.js"
   ],
   "homepage_url": "https://www.dribbbbble.com"
